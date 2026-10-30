@@ -104,13 +104,15 @@ h1,h2{font-family:var(--display);font-weight:600;letter-spacing:-.03em;line-heig
 /* Текстовые страницы: руководство, конфиденциальность, поддержка, 404 */
 .document{max-width:760px;margin:56px auto 100px}
 .document .back{font-size:15px;color:var(--action);text-decoration:none;font-weight:700}
-.document h1{font-size:clamp(32px,5vw,52px);margin:32px 0 22px}
+.document h1{font-size:clamp(22px,6.2vw,52px);margin:32px 0 22px;overflow-wrap:break-word}
 .document .lede{font-size:19px;line-height:1.65;color:var(--muted)}
 .document h2{font-size:24px;margin:44px 0 14px}
 .document p,.document li{font-size:17px;line-height:1.75;color:#3c4d55}
 .document a:not(.back):not(.button){color:var(--action)}
 .notice{background:var(--surface);border-left:4px solid var(--action);border-radius:0 16px 16px 0;padding:20px 24px;margin:28px 0}
 .notice p{margin:0}
+.notice p+p{margin-top:8px}
+.document section[lang]{border-top:1px solid var(--outline);margin-top:64px;padding-top:8px}
 .guide-nav{display:grid;gap:10px;background:var(--surface);border-radius:20px;padding:24px 28px;margin:35px 0}
 .guide-nav strong{font-size:15px;margin-bottom:4px}
 .guide-nav a{font-size:16px;text-decoration:none;color:var(--action)}
