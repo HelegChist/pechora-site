@@ -25,7 +25,7 @@ h1,h2{font-family:var(--display);font-weight:600;letter-spacing:-.03em;line-heig
 .brand{display:inline-flex;gap:12px;align-items:center;text-decoration:none;font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.01em}
 .brand small{display:block;font-family:var(--text);font-weight:500;font-size:12px;letter-spacing:0;color:var(--muted);margin-top:2px}
 .brand-mark{width:40px;height:40px;flex:none;background:var(--action);color:#fff;display:grid;place-items:center;border-radius:12px;font-family:var(--display);font-size:22px;font-weight:600}
-.header nav{display:flex;gap:28px;font-size:15px;font-weight:600}
+.header nav{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:600}
 .header nav a,.footer a{text-decoration:none}
 .header nav a:hover,.footer a:hover{color:var(--action)}
 .footer{border-top:1px solid var(--outline);padding:32px 0;margin-top:40px}
@@ -155,3 +155,7 @@ h1,h2{font-family:var(--display);font-weight:600;letter-spacing:-.03em;line-heig
   .brand small{display:none}
   .facts{grid-template-columns:1fr}
 }
+
+/* Переключатель языка: короткая метка другого языка в конце навигации */
+.header nav .lang{border:1px solid var(--outline);border-radius:999px;padding:3px 11px;font-size:13px;letter-spacing:.04em;line-height:1.5}
+.header nav .lang:hover{border-color:var(--action)}
